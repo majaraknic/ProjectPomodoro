@@ -29,4 +29,36 @@ public class Pomodoro {
 	@JoinColumn(name="id")
 	private User id;
 
+	public int getIdPomodoro() {
+		return idPomodoro;
+	}
+
+	public void setIdPomodoro(int idPomodoro) {
+		this.idPomodoro = idPomodoro;
+	}
+
+	public Date getStartDateTime() {
+		return startDateTime;
+	}
+
+	public void setStartDateTime(Date startDateTime) {
+		this.startDateTime = startDateTime;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public User getId() {
+		return id;
+	}
+
+	public void setId(User id) {
+		this.id = id;
+	}
+
 }
