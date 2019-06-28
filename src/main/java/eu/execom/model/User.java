@@ -30,8 +30,8 @@ public class User {
 	private String password;
 	
 	@ManyToOne
-	@JoinColumn(name="userId")
-	private User userId;
+	@JoinColumn(name="team_id")
+	private Team teamId;
 	
 	@OneToMany(mappedBy="pomodoro")
 	private List<Pomodoro> pomodoros;
@@ -76,12 +76,12 @@ public class User {
 		this.password = password;
 	}
 
-	public User getUserId() {
-		return userId;
+	public Team getTeamId() {
+		return teamId;
 	}
 
-	public void setUserId(User userId) {
-		this.userId = userId;
+	public void setUserId(Team teamId) {
+		this.teamId = teamId;
 	}
 
 }

@@ -26,8 +26,8 @@ public class Pomodoro {
 	private String status;
 	
 	@ManyToOne
-	@JoinColumn(name="id")
-	private User id;
+	@JoinColumn(name="user_id")
+	private User userId;
 
 	public int getIdPomodoro() {
 		return idPomodoro;
@@ -54,11 +54,11 @@ public class Pomodoro {
 	}
 
 	public User getId() {
-		return id;
+		return userId;
 	}
 
-	public void setId(User id) {
-		this.id = id;
+	public void setId(User userId) {
+		this.userId = userId;
 	}
 
 }
